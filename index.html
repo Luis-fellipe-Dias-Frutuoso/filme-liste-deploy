@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>PEPA/FILMES</title>
+    <link rel="website icon " type="png" href="imagens/logo_website-removebg-preview (1).png">
+    <style>
+        /* Estilos CSS para o layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #110e0e;
+        }
+
+        /* Estilo para o menu de navegação */
+        .top-nav {
+            background-color: #f45a5a;
+            overflow: hidden;
+        }
+
+        .top-nav a {
+            margin-left: 14%;
+            display: inline-flex;
+            color: white;
+            text-align: center;
+            padding: 14px 0px;
+            text-decoration: none;
+        }
+
+        .top-nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Estilo para a barra de pesquisa */
+        .search-bar {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .search-input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ffffff;
+        }
+
+        /* Estilo para os resultados da pesquisa */
+        .search-results {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .search-results-item {
+        flex-basis: calc(25% - 10px); /* Defina a largura desejada (4 itens por linha) */
+        border: solid 2px rgb(7, 7, 7);
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.612);
+        text-align: center;
+        padding: 10px;
+        margin: 5px; /* Adicione margens para espaçamento entre os itens */
+        
+    }
+    .search-results-item:hover{
+    background: linear-gradient(to right, rgb(83, 124, 89), rgb(143, 143, 184));
+}
+
+    .search-results-item img {
+        max-width: 100%; /* Define a largura máxima da imagem para ocupar no máximo a largura do contêiner */
+        max-height: 300px; /* Define a altura máxima da imagem (ajuste conforme necessário) */
+    }
+    .search-results-item img {
+            max-width: 100%; /* Define a largura máxima da imagem para ocupar no máximo a largura do contêiner */
+            max-height: 500px; /* Define a altura máxima da imagem (ajuste conforme necessário) */
+        }
+
+        /* Estilos para categorias "Filmes" e "Séries" */
+        .filme {
+            background-color: rgba(255, 0, 0, 0.5); /* Cor de fundo para filmes */
+        }
+
+        .serie {
+            background-color: rgba(0, 0, 255, 0.5); /* Cor de fundo para séries */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de Navegação Superior -->
+    <div class="top-nav">
+        <a href="#">Página Inicial</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <!-- Barra de Pesquisa -->
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Pesquisar por ID, Classe ou Título" id="searchBox">
+    </div>
+
+
+    <!-- Resultados da Pesquisa -->
+    <div  class="search-results" id="searchResults">
+        <div class="search-results-item" id="missão impossivel  acerto de contas">
+            <a class="image-link" target="_blank" href="paginasdefilmes/misão impossivel.html">
+                <img src="https://br.web.img3.acsta.net/pictures/23/06/21/21/16/0102047.jpg" alt="Imagem 1">
+            </a>
+            <legend>missão impossivel acerto de contas</legend>
+            </div>
+        
+        <div class="search-results-item" id="avatar 2">
+            <a class="image-link" href="paginasdefilmes/avatar.html">
+                <img src="imagens/Avatar 2 .jpg" alt="Imagem 2">
+            </a>
+            <legend> AVATAR 2</legend>
+            
+        </div>
+        <div class="search-results-item" id="a fantástica fabrica de chocolates">
+            <a class="image-link" href="paginasdefilmes/a fantástica fabrica de chocolates.html">
+                <img src="imagens/a fantástica fabrica de chocolates.png" alt="Imagem 1">
+            </a>
+        <legend>A FANTÁSTICA FABRICA DE CHOCOLATE</legend>
+        </div>
+        <div class="search-results-item" id="MOANA">
+            <a class="image-link" href="paginasdefilmes/moana.html">
+                <img src="imagens/MOANA.jpg" alt="Imagem 1">
+            </a>
+            <legend>MOANA</legend>
+            
+        </div>
+        <div class="search-results-item" id="A Outra Zoey">
+            <a class="image-link" href="paginasdefilmes/a outra zoey.html">
+                <img src="imagens/A OUTRA ZOEY.jpg" alt="Imagem 1">
+            </a>
+            <legend>A Outra Zoey</legend>
+            
+        </div>
+        <div class="search-results-item" id="series" id="Gato de Botas">
+            <a class="image-link" href="paginasdefilmes/gato de botas.html">
+                <img src="imagens/gatos de botas.jpg" alt="Imagem 1">
+            </a>
+            <legend>Gato de Botas</legend>
+        </div>
+        <div class="search-results-item" id="Sonic 3 - O Filme">
+            <a class="image-link" href="paginasdefilmes/sonic 3.html">
+                <img src="imagens/sonic.jpg" alt="Imagem 1">
+            </a>
+            <legend>Sonic 3 - O Filme</legend>
+            
+        </div>
+        <div class="search-results-item" id="Mortal Kombat Legends Cage Match">
+            <a class="image-link" href="paginasdefilmes/mortalcombat.html">
+                <img src="imagens/Mortal Kombat Legends.jpg" alt="Imagem 1">
+            </a>
+            <legend>Mortal Kombat Legends: Cage Match</legend>
+            
+        </div>
+        <div class="search-results-item" id="Velozes e Furiosos 10">
+            <a class="image-link" target="_blank" href="paginasdefilmes/velozes e furiosos.html">
+                <img src="imagens/Velozes e Furiosos 10.jpg" alt="Imagem 1">
+            </a>
+            <legend>Velozes e Furiosos 10</legend>
+            
+        </div>
+        <div class="search-results-item" id="dias">
+            <a class="image-link" href="paginasdefilmes/dois irmão uma jornada fantatisca.html">
+                <img src="imagens/dois irmão.jpg" alt="Imagem 1">
+            </a>
+            <legend>Dois Irmãos: Uma Jornada Fantástica</legend>
+            
+        </div>
+        <div class="search-results-item" id="Guardiões da Galáxia Vol.2">
+            <a class="image-link" href="paginasdefilmes/gardioes da galaxia 2.html">
+                <img src="imagens/Guardiões da Galáxia Vol.2.jpg" alt="Imagem 1">
+            </a>
+            <legend>Guardiões da Galáxia Vol.2</legend>
+            
+        </div>
+        <div class="search-results-item" id="massa cinzenta">
+            <a class="image-link" href="paginasdefilmes/gray matter.html">
+                <img src="imagens/Gray Matter.jpg" alt="Imagem 1">
+            </a>
+            <legend>GRAY MATTER (DUBLADO)</legend>
+        </div>
+        <!-- Adicione mais imagens com links conforme necessário -->
+    </div>
+    <div id="direitos-autorais">
+        &copy; 2023 pepa interprise. Todos os direitos reservados.
+    </div>
+    <script>
+        function search() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+            const results = document.getElementsByClassName('search-results-item');
+    
+            for (let i = 0; i < results.length; i++) {
+                const result = results[i];
+                const id = result.id.toLowerCase();
+    
+                if (id.includes(searchTerm)) {
+                    result.style.display = 'inline-block';
+                } else {
+                    result.style.display = 'none';
+                }
+            }
+        }
+    
+        // Add an event listener to the search input field
+        document.getElementById('searchBox').addEventListener('input', search);
+    </script>
+</body>
+</html>
